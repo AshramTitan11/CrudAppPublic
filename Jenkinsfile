@@ -8,6 +8,6 @@ pipeline{
             steps{
                 sh 'scp${WORKSOACE}/* root@${staging_server}:/var/www/html/Sahaj/'
             }
-        })
+        }
     }
 }
