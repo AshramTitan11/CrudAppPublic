@@ -1,14 +1,11 @@
 pipeline {
     agent any
+    environment{
+        staging_server="3.108.97.28"
     stages {
-        stage('verify version') {
+        stage('Deploy to Remote') {
             steps{
-                sh 'php --version'
-            }
-        }
-        stage('hello') {
-            steps {
-                sh 'php index.php'
+                sh 'scp ${WORKSPACE}/* ubuntu@{staging_server}:/var/www/html/'
             }
         }
     }
