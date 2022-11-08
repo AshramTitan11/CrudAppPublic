@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deploy to remote') {
             steps {
-                    sh "scp -r ${WORKSPACE}/* ubuntu@13.233.168.170"
+                    sh 'scp -r ${WORKSPACE}/* ubuntu@13.233.168.170'
             }
         }
     }
