@@ -51,8 +51,8 @@
           </div>
         </form>
       </div>
-    </div>
-  </div>
+<-- </div>
+</div> -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#"> <img src="/projects/PHP/CRUDApp/logo.png" height="28px" alt=""> iNotes</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -122,10 +122,7 @@
     crossorigin="anonymous"></script>
   <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
   <script>
-    $(document).ready(function () {
-      $('#myTable').DataTable();
-    });
-  </script>
+
   <script>
     edits = document.getElementsByClassName('edit');
     Array.from(edits).forEach((element) => {
